@@ -10,89 +10,96 @@
 </head>
 
 <body>
-    <Form>
-        <fieldset>
+    <div class="container">
+        <Form>
+            <fieldset>
 
-            <h3>Step 1: Your Details</h3>
-            <ul>
-                <li>
-                    <label for="name">Name</label>
-                    <input type="text" name="user_name" id="name">
-                </li>
-                <li>
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="user_email">
-                </li>
-                <li>
-                    <label for="phone">Phone</label>
-                    <input type="text" name="phone" id="user_phone">
-                </li>
-            </ul>
+                <legend>Step 1: Your Details</legend>
+                <ul>
+                    <li>
+                        <label for="user_name">Name</label>
+                        <input type="text" name="user_name" id="user_name" placeholder="First and last name">
+                    </li>
+                    <li>
+                        <label for="user_email">Email</label>
+                        <input type="text" name="email" id="user_email" placeholder="example@domain.com">
+                    </li>
+                    <li>
+                        <label for="user_phone">Phone</label>
+                        <input type="text" name="phone" id="user_phone" placeholder="Eg. +447500000000">
+                    </li>
+                </ul>
+
+            </fieldset>
+            <fieldset>
+
+                <legend>Step 2: Delivery Address</legend>
+
+                <ul>
+                    <li>
+                        <label for="user_address">Address</label>
+                        <input type="text" name="address" id="user_address">
+                    </li>
+                    <li>
+                        <label for="user_postcode">Post Code</label>
+                        <input type="text" name="post" id="user_postcode">
+                    </li>
+                    <li>
+                        <label for="user_country">Country</label>
+                        <input type="text" name="country" id="user_country">
+                    </li>
+                </ul>
+
+            </fieldset>
+            <fieldset>
+
+                <legend>Step 3: Card Details</legend>
+
+                <ul>
+                    <li>
+
+                        <label id="cardType">Card type</label>
+
+                        <ul id="cardOptions">
+                            <li class="creditCards">
+                                <input type="radio" name="visa" id="visa">
+                                <label for="visa">VISA</label>
+                            </li>
+                            <li class="creditCards">
+                                <input type="radio" name="amex" id="amex">
+                                <label for="amex">AmEx</label>
+                            </li>
+                            <li class="creditCards">
+                                <input type="radio" name="mastercard" id="mastercard">
+                                <label for="mastercard">Mastercard</label>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <label for="cardNumber">Card number</label>
+                        <input type="number" name="cardNumber" id="cardNumber">
+                    </li>
+                    <li>
+                        <label for="securityCode">Security code</label>
+                        <input type="number" name="securityCode" id="securityCode">
+                    </li>
+                    <li>
+                        <label for="nameOnCard">Name on card</label>
+                        <input type="text" name="nameOnCard" id="nameOnCard">
+                    </li>
+                </ul>
+
+                <div class="centerAlign">
+                    <button class="round-corners-5px unround-bottom-corners" type="submit">BUY IT!</button>
+                </div>
+
+            </fieldset>
 
 
 
-
-        </fieldset>
-        <fieldset>
-
-            <h3>Step 2: Delivery Address</h3>
-
-            <ul>
-                <li>
-                    <label for="">Address</label>
-                    <input type="text" name="address" id="user_address">
-                </li>
-                <li>
-                    <label for="">Post Code</label>
-                    <input type="text" name="post" id="user_postcode">
-                </li>
-                <li>
-                    <label for="">Country</label>
-                    <input type="text" name="country" id="user_country">
-                </li>
-            </ul>
-
-           
-          
-            
-
-        </fieldset>
-        <fieldset>
-
-            <h3>Step 3: Card Details</h3>
-
-            <ul>
-                <li>
-                    <label for="">VISA</label>
-                    <input type="radio" name="" id="">
-                    <label for="">AmEx</label>
-                    <input type="radio" name="" id="">
-                    <label for="">Mastercard</label>
-                    <input type="radio" name="" id="">
-                </li>
-                <li>
-                    <label for="">cardNumber</label>
-                    <input type="number" name="cardNumber" id="cardNumber">
-                </li>
-                <li>
-                    <label for="">securityCode</label>
-                    <input type="number" name="securityCode" id="securityCode">
-                </li>
-                <li>
-                    <label for="">nameOnCard</label>
-                    <input type="text" name="nameOnCard" id="nameOnCard">
-                </li>
-            </ul>
-
-
-
-        </fieldset>
-
-        <button type="submit">BUY IT!</button>
-
-
-    </Form>
-
+        </Form>
+    </div>
 </body>
 
 </html>
