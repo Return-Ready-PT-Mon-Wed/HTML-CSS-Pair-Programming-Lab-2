@@ -29,6 +29,12 @@ li {
     text-align: center;
 }
 
+
+input {
+    border-radius: 2px;
+    border: none;
+}
+
 legend {
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif
@@ -37,6 +43,7 @@ legend {
 li label {
     float: left;
 }
+
 
 input[type="text"],
 input[type="number"] {
