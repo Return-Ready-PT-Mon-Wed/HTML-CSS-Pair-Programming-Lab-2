@@ -40,9 +40,10 @@ li label {
 
 input[type="text"],
 input[type="number"] {
-    width: 150px;
+    width: 200px;
+    max-width: 100%;
     float: right;
-    margin-right: 30%;
+    margin-right: 25%;
 }
 
 #user_address {
