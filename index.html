@@ -33,12 +33,15 @@
             </fieldset>
             <fieldset>
 
+
                 <legend>Step 2: Delivery Address</legend>
+
 
                 <ul>
                     <li>
                         <label for="user_address">Address</label>
-                        <input type="text" name="address" id="user_address">
+                        <textarea maxlength="100"></textarea> <!-- changed this imput from text to textarea -->
+
                     </li>
                     <li>
                         <label for="user_postcode">Post Code</label>
@@ -60,17 +63,21 @@
 
                         <label id="cardType">Card type</label>
 
-                        <ul id="cardOptions">
+                        <!-- i assigned the same name on all the radio buttons so you can only choose one of the 
+                            options, if you click another one after choosing one it will uncheck what you 
+                            initally picked -->
+
+                        <ul id="cardOptions">                                 
                             <li class="creditCards">
-                                <input type="radio" name="visa" id="visa">
+                                <input type="radio" name="click" id="visa">
                                 <label for="visa">VISA</label>
                             </li>
                             <li class="creditCards">
-                                <input type="radio" name="amex" id="amex">
+                                <input type="radio" name="click" id="amex">
                                 <label for="amex">AmEx</label>
                             </li>
                             <li class="creditCards">
-                                <input type="radio" name="mastercard" id="mastercard">
+                                <input type="radio" name="click" id="mastercard">
                                 <label for="mastercard">Mastercard</label>
                             </li>
                         </ul>
@@ -86,12 +93,12 @@
                     </li>
                     <li>
                         <label for="nameOnCard">Name on card</label>
-                        <input type="text" name="nameOnCard" id="nameOnCard">
+                        <input type="text" name="nameOnCard" id="nameOnCard" placeholder="Exact name as on the card">
                     </li>
                 </ul>
 
                 <div class="centerAlign">
-                    <button class="round-corners-5px unround-bottom-corners" type="submit">BUY IT!</button>
+                    <button type="submit">BUY IT!</button>
                 </div>
 
             </fieldset>
