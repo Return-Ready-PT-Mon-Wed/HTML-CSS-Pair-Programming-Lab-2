@@ -13,7 +13,7 @@
 Also just changed the color a bit --*/
 
 form {
-    background-color: rgba(141, 173, 81, 0.993);
+    background-color: rgba(153, 182, 84, 0.993);
     border: 10px solid #ffffff;
     border-width: 20px 20px ;
     
@@ -48,17 +48,19 @@ ul {
 li {
     border: 1px white solid;
     padding: 10px;
-    background-color: rgb(176, 196, 87);
+    background-color: rgb(194, 209, 109);
     border-radius: 8px;
-    
-
 }
 
-legend {
-    font-weight: bold;
-    padding-left: 10px; /*-- this padding left pulled step 1, 2, and 3 over to the start of the boxes--*/
 
-    /* padding-top: 20px;  --- we need to somehow apply padding to top legend only,  
+
+legend {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-left: 10px; 
+    
+                           /*-- this padding left pulled step 1, 2, and 3 over to the--*/
+    /* padding-top: 20px;--- we need to somehow apply padding to top legend only,  
                          this is making to much space between all the lists,,
                          font also is looking a bit small.. possibly change to h2,3??
                          kinda like you had it before we changed back to legend ---*/
@@ -79,7 +81,7 @@ the form-final it has a smaller gap at the top of the button --*/
 button {
     color: white;
     text-align: center;
-    background-color: rgba(18, 53, 2, 0.849);
+    background-color: rgb(41, 46, 17);
     /* display: inline-block; */
     vertical-align: 15px;
     border-radius: 50px ;
@@ -100,6 +102,18 @@ button {
     justify-content: left;
     margin: 0 20px 0 0;
 }
+
+::placeholder {
+    opacity: 50%;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.toppad {
+    padding-top: 20px;
+}
+
 
 
 
