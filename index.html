@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Form-Final</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body>
+    <div class="container">
+        <Form>
+            <fieldset>
+
+                <legend class="toppad">Step 1: Your Details</legend>
+                <ul>
+                    <li>
+                        <label for="user_name">Name</label>
+                        <input type="text" name="user_name" id="user_name" placeholder="First and last name">
+                    </li>
+                    <li>
+                        <label for="user_email">Email</label>
+                        <input type="text" name="email" id="user_email" placeholder="example@domain.com">
+                    </li>
+                    <li>
+                        <label for="user_phone">Phone</label>
+                        <input type="text" name="phone" id="user_phone" placeholder="Eg. +447500000000">
+                    </li>
+                </ul>
+
+            </fieldset>
+            <fieldset>
+
+
+                <legend>Step 2: Delivery Address</legend>
+
+
+                <ul>
+                    <li>
+                        <label for="user_address">Address</label>
+                        <textarea maxlength="250"></textarea> <!-- changed this input from text to textarea -->
+
+
+                    </li>
+                    <li>
+                        <label for="user_postcode">Post Code</label>
+                        <input type="text" name="post" id="user_postcode">
+                    </li>
+                    <li>
+                        <label for="user_country">Country</label>
+                        <input type="text" name="country" id="user_country">
+                    </li>
+                </ul>
+
+            </fieldset>
+            <fieldset>
+
+                <legend>Step 3: Card Details</legend>
+
+                <ul>
+                    <li>
+
+                        <label id="cardType">Card type</label>
+
+                        <!-- i assigned the same name on all the radio buttons so you can only choose one of the 
+                            options, if you click another one after choosing one it will uncheck what you 
+                            initally picked -->
+
+                        <ul id="cardOptions">
+                            <li class="creditCards">
+                                <input type="radio" name="click" id="visa">
+                                <label for="visa">VISA</label>
+                            </li>
+                            <li class="creditCards">
+                                <input type="radio" name="click" id="amex">
+                                <label for="amex">AmEx</label>
+                            </li>
+                            <li class="creditCards">
+                                <input type="radio" name="click" id="mastercard">
+                                <label for="mastercard">Mastercard</label>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <label for="cardNumber">Card number</label>
+                        <input type="number" name="cardNumber" id="cardNumber">
+                    </li>
+                    <li>
+                        <label for="securityCode">Security code</label>
+                        <input type="number" name="securityCode" id="securityCode">
+                    </li>
+                    <li>
+                        <label for="nameOnCard">Name on card</label>
+                        <input type="text" name="nameOnCard" id="nameOnCard" placeholder="Exact name as on the card">
+                    </li>
+                </ul>
+
+                <div class="centerAlign">
+                    <button type="submit">BUY IT!</button>
+                </div>
+
+            </fieldset>
+
+
+
+        </Form>
+    </div>
+</body>
+
+</html>

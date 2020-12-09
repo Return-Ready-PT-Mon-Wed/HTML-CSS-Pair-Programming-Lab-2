@@ -1,0 +1,121 @@
+.container {
+    max-width: 500px;
+    margin: auto;
+    
+}
+
+#cardOptions {
+    margin: 0; 
+    padding: 0;
+}
+
+/*-- Added white border,, still cannot figure out how to get some radius on the green form corners 
+Also just changed the color a bit --*/
+
+form {
+    background-color: rgba(153, 182, 84, 0.993);
+    border: 10px solid #ffffff;
+    border-width: 20px 20px ;
+    
+}
+
+/*-- Added body to get the remainder of the page colored black --*/
+
+body {
+
+    background-color: #000000;
+}
+
+fieldset {
+    border: none;
+    
+}
+
+/*-- Added some padding to all the ul's to streatch the list boxes closer 
+to the sides and somehow it worked--*/
+
+ul {
+    list-style-type: none;  
+        /* display: flex;
+        flex-direction: column;  
+        */  
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+
+li {
+    border: 1px white solid;
+    padding: 10px;
+    background-color: rgb(194, 209, 109);
+    border-radius: 8px;
+}
+
+
+
+legend {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-left: 10px; 
+    
+                           /*-- this padding left pulled step 1, 2, and 3 over to the--*/
+    /* padding-top: 20px;--- we need to somehow apply padding to top legend only,  
+                         this is making to much space between all the lists,,
+                         font also is looking a bit small.. possibly change to h2,3??
+                         kinda like you had it before we changed back to legend ---*/
+}
+
+.centerAlign {
+    margin: 0 35%;
+    display: inline-block;
+    width: max-content;
+     /* border: solid black 1px; */
+}
+   
+/*-- I just did some tweaking on the button, the margin is moving the button horizontally, 
+the padding left and right is stretching the button, height is the thickness,,
+also can not figure out how to decrease the padding on the top of the button if you look at 
+the form-final it has a smaller gap at the top of the button --*/
+
+button {
+    color: white;
+    text-align: center;
+    background-color: rgb(41, 46, 17);
+    /* display: inline-block; */
+    vertical-align: 15px;
+    border-radius: 50px ;
+    /* padding: 10px; */
+    padding-left: 33px;
+    padding-right: 33px;
+    height: 30px;
+  }
+  
+#cardType {
+    display: block;
+    margin: 5px 0;
+}
+
+.creditCards {
+    border: none;
+    display: inline;
+    justify-content: left;
+    margin: 0 20px 0 0;
+}
+
+::placeholder {
+    opacity: 50%;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.toppad {
+    padding-top: 20px;
+}
+
+
+
+
+
+
