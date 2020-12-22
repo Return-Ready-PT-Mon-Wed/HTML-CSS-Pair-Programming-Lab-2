@@ -3,8 +3,8 @@
     width: 20%;
     border: 1px solid white;
     padding: 10px;
-    background-color:#bdb76b;
-    border-radius: 5px;
+    background-color: rgba(161, 204, 82, 0.884);
+        border-radius: 5px;
     
   }
   body {
@@ -14,7 +14,7 @@
 .name1{
     display:flex;
     justify-content: space-between;
-    background-color:#f0e68c;
+    background-color:  rgba(198, 226, 147, 0.884);
     border: 2px solid white;
     padding:10px;
     border-radius: 15px;
@@ -35,7 +35,7 @@
 
   .name2{
     
-    background-color:#f0e68c;
+    background-color: rgba(161, 204, 82, 0.884);
     border: 2px solid white;
     padding:10px;
     border-radius: 15px;
@@ -43,3 +43,4 @@
    
 
 } 
+
