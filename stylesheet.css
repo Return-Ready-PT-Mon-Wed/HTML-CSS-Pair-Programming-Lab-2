@@ -1,0 +1,46 @@
+.center {
+    margin: auto;
+    width: 20%;
+    border: 1px solid white;
+    padding: 10px;
+    background-color: rgba(161, 204, 82, 0.884);
+        border-radius: 5px;
+    
+  }
+  body {
+    font-family: Georgia, serif;
+    color:olive;
+  }
+.name1{
+    display:flex;
+    justify-content: space-between;
+    background-color:  rgba(198, 226, 147, 0.884);
+    border: 2px solid white;
+    padding:10px;
+    border-radius: 15px;
+    margin-bottom: 2px;
+   
+
+}
+  button {
+  
+        background-color: black;
+        color: white;
+        border-radius: 15px;
+        padding:4px 16px;
+        margin-top: 5px;
+        margin-left: 40%;    
+
+  }
+
+  .name2{
+    
+    background-color: rgba(161, 204, 82, 0.884);
+    border: 2px solid white;
+    padding:10px;
+    border-radius: 15px;
+    margin-bottom: 2px;
+   
+
+} 
+
